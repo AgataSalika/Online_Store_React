@@ -1,0 +1,236 @@
+.productCard_wrapper {
+  width: 20%;
+  height: 434px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 30px;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+  @media screen and (max-width: 768px) {
+.productCard_wrapper {
+  width: 44%;
+  height: auto;
+}
+ }
+
+   @media screen and (max-width: 520px) {
+.productCard_wrapper {
+  width: 100%;
+}
+ }
+
+
+.productCard_wrapper:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.productCard_wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #fa1f4b, #ff6b9d);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.productCard_wrapper:hover::before {
+  opacity: 1;
+}
+
+.productCard_photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.productCard_wrapper:hover .productCard_photo {
+  transform: scale(1.02);
+}
+
+.productCard_photo img {
+  width: 100%;
+  height: 286px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 15px;
+  transition: transform 0.5s ease;
+}
+
+  @media screen and (max-width: 768px) {
+.productCard_photo img {
+  width: 100%;
+  height: 500px;
+  object-position: top;
+ }
+}
+
+
+.productCard_wrapper:hover .productCard_photo img {
+  transform: scale(1.05);
+}
+
+.productCard_photo::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 70%,
+    rgba(0, 0, 0, 0.1)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 15px;
+}
+
+.productCard_wrapper:hover .productCard_photo::after {
+  opacity: 1;
+}
+
+.productCard_title {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.4;
+  color: #2d2d2d;
+  margin: 8px 0 4px;
+  transition: color 0.2s ease;
+}
+
+.productCard_wrapper:hover .productCard_title {
+  color: #fa1f4b;
+}
+
+.productCard_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 8px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.productCard_price {
+  color: #fa1f4b;
+  font-weight: 700;
+  font-size: 20px;
+  position: relative;
+  padding-left: 20px;
+}
+
+
+.productCard_price span {
+  color: #9f9fa7;
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.productCard_company {
+  color: #9f9fa7;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.productCard_company::before {
+  content: '🏢';
+  font-size: 12px;
+}
+
+.productCard_rating {
+  color: #9f9fa7;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.productCard_rating::before {
+  content: '★';
+  color: #ffc107;
+  font-size: 16px;
+}
+
+.productCard_actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.productCard_wrapper:hover .productCard_actions {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.productCard_button {
+  flex: 1;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.productCard_button--primary {
+  background: linear-gradient(135deg, #fa1f4b, #ff6b9d);
+  color: white;
+}
+
+.productCard_button--primary:hover {
+  background: linear-gradient(135deg, #e51a43, #ff5288);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(250, 31, 75, 0.3);
+}
+
+.productCard_button--secondary {
+  background: #f5f5f5;
+  color: #2d2d2d;
+}
+
+.productCard_button--secondary:hover {
+  background: #e8e8e8;
+  transform: translateY(-2px);
+}
+
+.productCard_badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: linear-gradient(135deg, #fa1f4b, #ff6b9d);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(250, 31, 75, 0.3);
+}
+
+
