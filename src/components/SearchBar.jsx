@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-const SearchBar = ({searchItem}) => {
+const SearchBar = ({searchItem, setSearchedGoods, data}) => {
   const [search, setSearch]= useState('')
   
   return (
@@ -23,6 +23,8 @@ const SearchBar = ({searchItem}) => {
           } } type="submit" className="search-button">
             Найти
           </button>
+
+          <button className="show-all-goods search-button" onClick={ ()=> setSearchedGoods(data)}>Показать все товары</button>
         </div>
       </form>
     </div>

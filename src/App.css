@@ -752,16 +752,29 @@ a.cta-button {
 }
 
 /* Карточки */
-.info-card,
-.form-card {
+.info-card {
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   padding: 35px;
-  height: 100%;
+  height: auto;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
+}
+
+.form-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 35px;
+  height: auto;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
 }
 
 .info-card:hover,
@@ -877,7 +890,7 @@ a.cta-button {
 
 .form-group input,
 .form-group textarea {
-  width: 100%;
+  width: fit-content;
   padding: 14px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -1255,6 +1268,12 @@ a.cta-button {
   gap: 10px;
   margin-bottom: 10px;
 }
+  @media screen and (max-width: 1200px ) {
+  .search-input-wrapper{
+   flex-direction: column;
+ }
+}
+
 
 .search-input {
   flex: 1;
