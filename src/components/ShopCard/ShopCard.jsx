@@ -11,7 +11,7 @@ const ShopCard = ({
   el,
   addGood
 }) => {
-  let photoSrc = `/images/${el.cardPhoto}`;
+  let photoSrc = `/Online_Store_React/images/${el.cardPhoto}`;
 
   let [showText, setShowText] = useState(false)
   let [textBtn, setTextBtn] = useState('В корзину') 
