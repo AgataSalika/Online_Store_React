@@ -1,5 +1,9 @@
+body {
+ font-family: "Montserrat";
+}
+
+
 .container {
-  font-family: "Montserrat";
   width: 1170px;
   padding-right: 15px;
   padding-left: 15px;
@@ -309,7 +313,6 @@ nav a {
 
 /* About.css */
 .about-container {
-  font-family: "Arial", sans-serif;
   color: #333;
   line-height: 1.6;
 }
