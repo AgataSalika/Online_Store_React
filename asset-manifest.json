@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Online_Store_React/static/css/main.d7d3813c.css",
+    "main.css": "/Online_Store_React/static/css/main.a021bb3a.css",
     "main.js": "/Online_Store_React/static/js/main.31ad1742.js",
     "static/media/Montserrat-Bold.woff2": "/Online_Store_React/static/media/Montserrat-Bold.74353369e12619cf924f.woff2",
     "static/media/Montserrat-SemiBold.woff2": "/Online_Store_React/static/media/Montserrat-SemiBold.02974b99e8cf09c46d21.woff2",
@@ -9,11 +9,11 @@
     "static/media/1.webp": "/Online_Store_React/static/media/1.ab98494b000ba998e4f9.webp",
     "static/media/photo3.JPG": "/Online_Store_React/static/media/photo3.1aa19b786448b6fdac12.JPG",
     "index.html": "/Online_Store_React/index.html",
-    "main.d7d3813c.css.map": "/Online_Store_React/static/css/main.d7d3813c.css.map",
+    "main.a021bb3a.css.map": "/Online_Store_React/static/css/main.a021bb3a.css.map",
     "main.31ad1742.js.map": "/Online_Store_React/static/js/main.31ad1742.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7d3813c.css",
+    "static/css/main.a021bb3a.css",
     "static/js/main.31ad1742.js"
   ]
 }
